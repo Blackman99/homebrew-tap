@@ -6,7 +6,7 @@ jobs:
       matrix: {os: [ubuntu-latest, macos-latest]}
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: Homebrew/actions/setup-homebrew@main
       - uses: actions/checkout@v5
       - name: Link checkout as tap
         run: |
