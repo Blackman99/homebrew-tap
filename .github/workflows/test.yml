@@ -1,0 +1,17 @@
+name: Test formulae
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    strategy:
+      matrix: {os: [ubuntu-latest, macos-latest]}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: actions/checkout@v5
+      - name: Link checkout as tap
+        run: |
+          tap="$(brew --repository)/Library/Taps/blackman99/homebrew-tap"
+          mkdir -p "$(dirname "$tap")"; rm -rf "$tap"; ln -s "$GITHUB_WORKSPACE" "$tap"
+      - run: brew style blackman99/tap
+      - run: brew install blackman99/tap/renewhunt
+      - run: brew test blackman99/tap/renewhunt
