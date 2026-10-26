@@ -1,28 +1,28 @@
 class Renewhunt < Formula
   desc "Hunt ACME renewal windows that break with 64-day certificates"
   homepage "https://blackman99.github.io/renewhunt/"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Blackman99/renewhunt/releases/download/v0.2.0/renewhunt_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1a595706e33ead90aac2a841ab92e30da653d636c992905b5989aa51a073cb52"
+      url "https://github.com/Blackman99/renewhunt/releases/download/v0.3.0/renewhunt_0.3.0_darwin_arm64.tar.gz"
+      sha256 "b38ecb7f085ff5e6160b9db7cf3e8af83823aa5a11d5535cc8ba1fab6eb679c4"
     end
     on_intel do
-      url "https://github.com/Blackman99/renewhunt/releases/download/v0.2.0/renewhunt_0.2.0_darwin_amd64.tar.gz"
-      sha256 "23a125b2625e8e076b4b1b76157de016e36a309c15da90d710fd6f2c781b236f"
+      url "https://github.com/Blackman99/renewhunt/releases/download/v0.3.0/renewhunt_0.3.0_darwin_amd64.tar.gz"
+      sha256 "173cc848d2d2dcd907096d548e258b53db242b061ee4341fecd1771b03490728"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Blackman99/renewhunt/releases/download/v0.2.0/renewhunt_0.2.0_linux_arm64.tar.gz"
-      sha256 "0083fd34777e66eb1ab0b2f7803371935877907c642f9965c79601d0c9333fd6"
+      url "https://github.com/Blackman99/renewhunt/releases/download/v0.3.0/renewhunt_0.3.0_linux_arm64.tar.gz"
+      sha256 "ef1adcc985db4f23fc69c7a01e5a66b8f7b83d1582b2959f4e8040400160986a"
     end
     on_intel do
-      url "https://github.com/Blackman99/renewhunt/releases/download/v0.2.0/renewhunt_0.2.0_linux_amd64.tar.gz"
-      sha256 "983620f467ead8a4893470533252b80774651acec66d98fb9ffb15fc209be22d"
+      url "https://github.com/Blackman99/renewhunt/releases/download/v0.3.0/renewhunt_0.3.0_linux_amd64.tar.gz"
+      sha256 "ff7e4b6b1103e1e26304858c48b43f562717516b86e02b5731557ca46b469761"
     end
   end
 
